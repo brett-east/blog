@@ -1,0 +1,10 @@
+# Site settings
+title: Blog title
+email: email@email.com
+description: >
+  This is the description.
+baseurl: ''
+url: ''
+
+# Build settings
+markdown: kramdown
