@@ -8,3 +8,7 @@ url: ''
 
 # Build settings
 markdown: kramdown
+paginate: 4
+paginate_path: '/page:num/'
+permalink: /:title
+gems: [jekyll-paginate]

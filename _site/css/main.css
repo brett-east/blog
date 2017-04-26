@@ -1,0 +1,122 @@
+body {
+  font-family: 'Lato', helvetica, arial, sans-serif;
+  font-size: 16px; }
+
+p, ul li, ol li {
+  font-weight: 300; }
+
+.cursive {
+  font-family: cursive; }
+
+.monospace {
+  font-family: monospace; }
+
+.droid-serif {
+  font-family: 'Droid Serif', serif; }
+
+h1, h2 {
+  font-family: 'Droid Serif', serif; }
+
+.navbar {
+  margin-bottom: 0;
+  padding-top: 5px;
+  font-size: 14px; }
+
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #000;
+  border-radius: 1px; }
+
+.navbar-brand {
+  padding: 0;
+  width: 35px;
+  height: 35px;
+  margin-left: 25px; }
+  .navbar-brand img {
+    height: 100%;
+    width: auto; }
+
+#mainNav .nav > li > a {
+  padding: 10px 30px;
+  color: #393939; }
+
+.no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0; }
+
+#header-image {
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45) 100%), -webkit-radial-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.8) 80%), url("../images/bg-1-brett-face-desk.jpg") no-repeat center center;
+  background-size: cover;
+  height: 500px; }
+  #header-image h1 {
+    font-size: 2.5em;
+    line-height: 1.5em;
+    font-weight: 700; }
+  #header-image p {
+    color: #fff; }
+  #header-image .cursive {
+    color: #b5ebff; }
+  #header-image .monospace {
+    color: #ffb8b8; }
+
+.banner-text {
+  color: #fff;
+  padding-top: 200px; }
+
+#main-content h2 {
+  margin-bottom: 30px; }
+#main-content p {
+  color: #777;
+  line-height: 1.8em;
+  margin-bottom: 20px; }
+#main-content ul li, #main-content ol li {
+  color: #777; }
+#main-content section {
+  padding: 40px 0; }
+
+footer {
+  height: 120px;
+  background-color: #393538;
+  color: #FFF;
+  padding: 15px 0; }
+  footer ul {
+    list-style: none;
+    padding: 0; }
+    footer ul li {
+      display: inline-block;
+      padding: 10px;
+      margin: 0 15px; }
+      footer ul li a {
+        display: inline-block;
+        color: #fff; }
+        footer ul li a :hover {
+          color: #ccc; }
+        footer ul li a i {
+          font-size: 1.5em; }
+  footer p {
+    color: #a4a4a4; }
+
+html, body {
+  height: 100%; }
+
+#main-content {
+  min-height: 100%;
+  margin-bottom: -110px; }
+  #main-content:after {
+    content: "";
+    display: block;
+    height: 120px; }
+
+.page-wrap:after {
+  content: "";
+  display: block; }
+
+#main-content.blog h1 a:hover {
+  text-decoration: none; }
+
+pre {
+  overflow-x: scroll; }
+  pre code {
+    white-space: pre; }
