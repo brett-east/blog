@@ -17,6 +17,7 @@ pre {
 	height: 300px;
 }
 
+// Pagination
 .pagination {
   float: right;
 }
@@ -28,4 +29,26 @@ pre {
 
 .next-link {
   display: inline-block;
+}
+
+
+// Archive page
+.archive h3:target {
+	color: #337ab7;
+	font-size: 1.6em;
+}
+
+.return {
+	display: none;
+}
+h3:target + .taglist .return {
+	display: block;
+}
+.return a {
+	font-size: 0.8em;
+	text-decoration: none;
+	color: #337ab7;
+}
+.return a:before {
+	content: '\25b2\00a0';
 }

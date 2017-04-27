@@ -3,9 +3,9 @@ layout: post
 title: 'What is a UX Engineer'
 excerpt_separator: <!--- more --->
 comments: true
-description:
-twitterdescription:
-tags: ['UX Engineer']
+description: 'Brett East explains the relatively unknown UX Engineer role'
+twitterdescription: 'What is a UX Engineer? - by Brett East'
+tags: ['ux engineer', 'user experience']
 ---
 
 A little while ago I read a [great article, from fastcodesign](http://www.fastcodesign.com/3032719/ui-ux-who-does-what-a-designers-guide-to-the-tech-industry), on the differences between UX Designers, Interaction Designers, UI Designers and more.

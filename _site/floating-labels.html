@@ -5,30 +5,30 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="canonical" href="/what-is-a-ux-engineer">
-  <meta name="description" content="Brett East explains the relatively unknown UX Engineer role">
+  <link rel="canonical" href="/floating-labels">
+  <meta name="description" content="A look at the floating labels pattern">
 
   <!-- social meta tags -->
-  <meta name="description" content="Brett East explains the relatively unknown UX Engineer role" />
+  <meta name="description" content="A look at the floating labels pattern" />
 
   <!-- Schema.org markup for Google+ -->
-  <meta itemprop="name" content="What is a UX Engineer">
-  <meta itemprop="description" content="What is a UX Engineer - by Brett East">
+  <meta itemprop="name" content="Floating Labels">
+  <meta itemprop="description" content="Floating Labels - by Brett East">
 
   <!-- Twitter Card data -->
   <meta name="twitter:site" content="@bretteast">
-  <meta name="twitter:title" content="What is a UX Engineer">
-  <meta name="twitter:description" content="What is a UX Engineer? - by Brett East">
+  <meta name="twitter:title" content="Floating Labels">
+  <meta name="twitter:description" content="A look at the floating labels pattern - by Brett East">
   <meta name="twitter:creator" content="@bretteast">
 
   <!-- Open Graph data -->
-  <meta property="og:title" content="What is a UX Engineer" />
+  <meta property="og:title" content="Floating Labels" />
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="/what-is-a-ux-engineer" />
-  <meta property="og:description" content="Brett East explains the relatively unknown UX Engineer role" />
+  <meta property="og:url" content="/floating-labels" />
+  <meta property="og:description" content="A look at the floating labels pattern" />
   <meta property="og:site_name" content="BrettEast.me" />
 
-  <title>Brett East | Blog - What is a UX Engineer</title>
+  <title>Brett East | Blog - Floating Labels</title>
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
@@ -85,45 +85,25 @@
   <div class="row">
     <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
     <article>
-      <h1 class="text-center">What is a UX Engineer</h1>
+      <h1 class="text-center">Floating Labels</h1>
       <p><a href="/">&larr; Back to Blog</a></p>
       <!-- TODO: change this to a real url, not a slash -->
-      <p>A little while ago I read a <a href="http://www.fastcodesign.com/3032719/ui-ux-who-does-what-a-designers-guide-to-the-tech-industry">great article, from fastcodesign</a>, on the differences between UX Designers, Interaction Designers, UI Designers and more.</p>
+      <p>You may have recently seen a new design pattern in web and mobile form fields called Floating Labels. Popularised in a <a href="http://bradfrost.com/blog/post/float-label-pattern/">blog post by Brad Frost</a> and referencing a <a href="https://dribbble.com/shots/1254439--GIF-Mobile-Form-Interaction">gif mockup by Matt D Smith</a>, I thought that I would show my own working version of the concept.<!--- more ---></p>
 
-<p>However they didn’t quite touch on the role of UX Engineer, a position that I’ve seen advertised <!--- more ---> for more and more, of late. The Google offices in Mountain View were looking to fill a few roles with this title just a few weeks ago. So, given I currently class myself as a UX Engineer, I thought I would elaborate on how I see that fitting in with the ever evolving UI/UX landscape.</p>
+<p><img src="/images/matt-d-smith-floating-labels.gif" alt="A floating labels example by Matt D Smith" class="img-responsive" style="width: 400px; margin: 0 auto 40px;" /></p>
 
-<p>A UX Engineer, is essentially a Front End Web Developer that focuses on user experience. Often I will be presented with a problem or a solution from a business analyst and then mockup a web component (say a carousel, or nav, or timer etc) in working code and refine it, essentially to the point where it usable on a website, and then hand it off to Backend Engineers so that they can add their database hooks and implement it into the site.</p>
+<p>To begin with I wanted to redesign the input fields for a site that I was working on that the time - they were using left aligned labels in some places and labels positioned inside the form field, both of which pose problems for small screens</p>
 
-<p>I would say it is definitely one of those broader roles, where an employer is trying to get a ‘UX Designer’ and a ‘Front End Engineer’ in the one position. The benefit of finding someone that can fill this position, is that you have a person that can take a usable and thought through solution from design right through to workable component.</p>
+<p>It was also important to be semantic, my background working for the Australian government has (fortunately) instilled a strong need to write semantic and wcag2.0 friendly code. It was also important for usability reasons to have additional ‘helper’ or ‘placeholder’ text if necessary.</p>
 
-<p>Another way to look at it would be as a UX Designer with technical capabilities. Someone who can not only come up with a great UX concept, but also develop the component with working front end code. I say ‘front end’ code as this role does primarily focus on the front end still, so rather than build something that pulls in information from a database, a UX Engineer might build something that works with dummy data and hand it off to a Back End Engineer. This is not always the case, but it is more common for a UX Engineer to not spread quite so far through the development stack and focus more on the front end, particularly as that is where the user experience sits.</p>
+<p data-height="938" data-theme-id="21248" data-slug-hash="yJarjo" data-default-tab="result" data-user="bretteast" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/bretteast/pen/yJarjo/">Contact form modal</a> by Brett East (<a href="http://codepen.io/bretteast">@bretteast</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async="" src="//assets.codepen.io/assets/embed/ei.js"></script>
 
-<p><strong>Extra:</strong> Given this role is a broad brush stroke across UX and development, job descriptions will often also include elements of a UI Designer and will often require a user interface design element as well. While UI and UX roles can be completely independent of each other (as in different positions), it often helps to have a knowledge of the other one, especially as many small to mid-sized companies can’t often afford to put money into both roles.</p>
+<p>In the above example I add and remove a style to the label based on whether or not the field has a value or focus, and remove it on blur if nothing has been entered.</p>
 
-<p>To help paint a picture of a UX Engineer, here are some roles &amp; responsibilities and skills/qualifications taken from actual advertised UX Engineer roles:</p>
+<p>This is a relatively simple approach and I use it to also allow for additional ‘placeholder’ text. As you can see in the textarea, the placeholder text disappears when the label floats to the top.</p>
 
-<p>Roles and Responsibilities:</p>
-
-<ul>
-  <li>Work closely with UX designers, project managers and back-end engineers to implement versatile front-end solutions.</li>
-  <li>Provide front-end coding and design expertise, and be ready to present design ideas to engineers, product management and other teams.</li>
-  <li>Make our products better for our users, advocate for them, always seeking ways to improve and innovate</li>
-</ul>
-
-<p>Skills and qualifications:</p>
-
-<ul>
-  <li>BA/BS degree in Computer Science or Design (e.g., interaction, graphic, visual communications, product, industrial), HCI, CS or a related field.</li>
-  <li>Strong knowledge of web standards including HTML5, CSS3</li>
-  <li>Strong JavaScript skills</li>
-  <li>Strong, clean visual design sense.</li>
-  <li>Good interaction design skills.</li>
-  <li>Familiarity with CSS processing languages such as Less/Sass</li>
-  <li>Familiarity with JS frameworks such as Angular</li>
-  <li>Familiarity with prototyping and design tools such as Axure, Photoshop, Illustrator</li>
-</ul>
-
-<p>For me this is an exciting role where you get to make decisions and produce designs to help the user but also bring them into implementation.</p>
+<p>I welcome any feedback on improving this design in the discussion section and feel free to go ahead and fork the codepen.</p>
 
         </article>
         <section>
@@ -131,8 +111,8 @@
 <div id="disqus_thread"></div>
 <script>
 var disqus_config = function () {
-this.page.url = "http://blog.bretteast.me/what-is-a-ux-engineer"; // <--- use canonical URL
-this.page.identifier = "/what-is-a-ux-engineer";
+this.page.url = "http://blog.bretteast.me/floating-labels"; // <--- use canonical URL
+this.page.identifier = "/floating-labels";
 };
 (function() {  // DON'T EDIT BELOW THIS LINE
     var d = document, s = d.createElement('script');
