@@ -5,7 +5,7 @@ layout: default
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				<h1 class="text-center">Blog</h1>
+				<h1 class="text-center"><a href="/">Blog</a></h1>
 				<section>
 					<p class="text-center">This is where I write about different user experience and coding bits and pieces.</p>
 				</section>
@@ -24,7 +24,8 @@ layout: default
             <h2><a href="{{site.baseurl}}{{post.url}}" rel="bookmark" title="Permanent Link to {{site.baseurl}}{{post.url}}">{{post.title}}</a></h2>
             <time itemprop="dateCreated" datetime="{{post.date}}">{{ post.date | date: "%B %-d, %Y" }}</time>
           </header>
-          <p>{{ post.excerpt | strip_html }} <a href="{{site.baseurl}}{{ post.url }}" class="more" title="read more">read more</a></p>
+          {{ post.excerpt }}
+          <p><a href="{{site.baseurl}}{{ post.url }}" class="more" title="read more">continue reading <em>{{ post.title }}</em> &rarr;</a></p>
         </article>
 			</div><!-- .col-sm-12 col-md-8 col-lg-6 -->
     </div><!-- .row -->
@@ -33,13 +34,13 @@ layout: default
     <div class="row">
       <div class="pagination"> {% if paginator.previous_page %}
         {% if paginator.previous_page == 1 %}
-        <p class="prevLink"><a href="{{site.baseurl}}/" class="previous">newer entries</a></p>
+        <p class="prev-link"><a href="{{site.baseurl}}/" class="previous">&larr; newer entries</a></p>
         {% else %}
-        <p class="prevLink"><a href="{{ site.baseurl }}/page{{ paginator.previous_page }}" class="previous">newer entries</a></p>
+        <p class="prev-link"><a href="{{ site.baseurl }}/page{{ paginator.previous_page }}" class="previous">&larr; newer posts</a></p>
         {% endif %}
         {% endif %}
         {% if paginator.next_page %}
-        <p class="nextLink"><a href="{{ site.baseurl }}/page{{ paginator.next_page }}" class="next">older entries</a></p>
+        <p class="next-link"><a href="{{ site.baseurl }}/page{{ paginator.next_page }}" class="next">older posts &rarr;</a></p>
         {% endif %} </div>
     </div> <!-- paginator row -->
 	</div><!-- .container -->

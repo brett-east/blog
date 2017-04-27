@@ -120,3 +120,18 @@ pre {
   overflow-x: scroll; }
   pre code {
     white-space: pre; }
+
+#header-image-blog {
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45) 100%), -webkit-radial-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.8) 80%), url("../images/bg-macbook-cu-bw.jpg") no-repeat center center;
+  background-size: cover;
+  height: 300px; }
+
+.pagination {
+  float: right; }
+
+.prev-link {
+  display: inline-block;
+  margin-right: 4rem; }
+
+.next-link {
+  display: inline-block; }

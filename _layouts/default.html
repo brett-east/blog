@@ -21,19 +21,18 @@
             </div>
             <div class="collapse navbar-collapse" id="mainNav">
           		<ul class="nav navbar-nav navbar-right">
-          			<li><a href="/index.html">Home</a></li>
+          			<li><a href="http://bretteast.me/">Home</a></li>
           			<li><a href="/blog">Blog</a></li>
-          			<li><a href="/about.html">About Me</a></li>
-          			<li><a href="/portfolio">My Work</a></li>
-          			<li><a href="/resume.html">Resume</a></li>
-          			<!--<li><a href="hireme.html">Hire Me</a></li> not for now -->
-          			<!--<li><a href="http://136-days-of-functions.bretteast.me">136 Days of Functions</a></li>-->
-          			<li><a href="/contact.html">Contact</a></li>
+          			<li><a href="http://bretteast.me/about.html">About Me</a></li>
+          			<li><a href="http://bretteast.me/portfolio">My Work</a></li>
+          			<li><a href="http://bretteast.me/resume.html">Resume</a></li>
+          			<li><a href="http://bretteast.me/contact.html">Contact</a></li>
           		</ul>
         	</div><!-- #mainNav -->
         </nav>
-		  	  <div id="header-image-resume">
-		  	  </div><!-- #header-image -->
+        {% unless page.id %}
+		  	  <div id="header-image-blog"></div><!-- #header-image -->
+        {% endunless %}
 		  	</div><!-- .row -->
 	  	</div><!-- .container-fluid -->
 
