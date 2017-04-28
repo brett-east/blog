@@ -10,6 +10,7 @@ layout: default
       <h1 class="text-center">{{ page.title }}</h1>
       <p><a href="/">&larr; Back to Blog</a></p>
       <!-- TODO: change this to a real url, not a slash -->
+      <p>{{ page.date | date: "%B %-d, %Y" }}</p>
       {{content}}
         </article>
         <section>

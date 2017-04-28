@@ -10,6 +10,6 @@ url: ''
 markdown: kramdown
 paginate: 4
 paginate_path: '/page:num/'
-permalink: /:title
+permalink: /:title/
 gems: [jekyll-paginate]
 highlighter: rouge
